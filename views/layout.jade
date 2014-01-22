@@ -1,0 +1,61 @@
+html
+  head
+    title #{title}
+    meta(name = "description" content = "sample web single page with nodeJS(expressJS, template enginde jade, css engine styluss) and free template penny")
+    meta(name = "keywords" content = "example nodeJS, example expressJS")
+    meta(name = "author" content = "nurjalih")
+    
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic')
+    link(rel='stylesheet', href='/stylesheets/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/css/animate.min.css')
+    link(rel='stylesheet', href='/stylesheets/css/style.css')
+    
+  body
+    .outer
+      div.navigation
+        a(href = '#')!='menu'
+      div.sidebar
+        div(class = 'logo text-center')
+          h1 <a href = '#'>JALIH</a>
+          p Sample Web
+        div.sidebar-search
+          form
+            div.input-group
+              input(type = "text" class="form-control" placeholder="Text to search")
+              span(class = "input-group-btn")
+                button(class="btn btn-danger" type="button") <i class="icon-search"></i>
+                
+        ul(class = 'list-unstyled list')
+          li
+            a(href="#home" class="anchorLink") <i class="icon-home scolor"></i> Home
+          li
+            a(href="#.team" class="anchorLink") <i class="icon-user scolor"></i> About Us
+          li  
+            a(href="#.service" class="anchorLink") <i class="icon-retweet scolor"></i> Service
+          li  
+            a(href="#.feature" class="anchorLink") <i class="icon-road scolor"></i> Feature
+          li  
+            a(href="#.testimonial" class="anchorLink") <i class="icon-info scolor"></i> Testimonial
+          li  
+            a(href="#.ptable" class="anchorLink") <i class="icon-gift scolor"></i> Price Table
+          li  
+            a(href="#.contact" class="achorLink") <i class="icon-envelope scolor"></i> Contact
+        div.social
+          a(href="https://www.facebook.com/nurjalih.ahmad" class="facebook") <i class="icon-facebook"></i>
+          a(href="https://twitter.com/naziah_sifa" class="twitter") <i class="icon-twitter"></i>
+          a(href="https://plus.google.com/115705691007370919012/about" class="google") <i class="icon-google-plus"></i>
+          a(href="http://www.linkedin.com/profile/view?id=196948436&trk=nav_responsive_tab_profile" class="linkedin") <i class="icon-linkedin"></i>
+      div.main
+        block content
+        div(class="clearfix")
+        span(class="totop") <a href="#"><i class="icon-chevron-up"></i></a>
+            
+script(type='text/javascript', src = '/stylesheets/js/jquery.js')
+script(type='text/javascript', src = '/stylesheets/js/bootstrap.min.js')
+script(type='text/javascript', src = '/stylesheets/js/jquery.arbitrary-anchor.js')
+script(type='text/javascript', src = '/stylesheets/js/waypoints.min.js')
+script(type='text/javascript', src = '/stylesheets/js/respond.min.js')
+script(type='text/javascript', src = '/stylesheets/js/html5shiv.js')
+script(type='text/javascript', src = '/stylesheets/js/custom.js')
